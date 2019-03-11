@@ -30,7 +30,7 @@ main ()
 		{
 			printf ("*");
 		}
-		for (j=i;j<=3;j++)
+		for (j=n;j>i+1;j--)
 		{
 			printf ("*");
 		}
