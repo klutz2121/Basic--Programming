@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
+	<script type="text/javascript">
+		//module():Container of all component of the app... The square bracket is independent
+		var app = angular.module('myapp',[]);
+		app.controller('mytr',function($scope){	//Anonymous function need to be created
+			$scope.car = 'Mercedez';
+			$scope.motorcycle = 'BMW';	
+			$scope.bicycle = 'Giant';
+		});
+	</script>
+</head>
+<body>	
+	<div ng-app="myapp" ng-controller = "mytr">	
+		<!--This is the one way to call and print the value in the script-->
+		<h1 ng-bind="bicycle"></h1>
+		<h1 ng-bind="motorcycle"></h1>
+		<!--This is the second way-->
+		{{car}}
+	</div>
+</body>
+</html>
