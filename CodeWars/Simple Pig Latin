@@ -1,0 +1,16 @@
+function pigIt(str){
+  var arr = [];
+  str = str.split(" ");
+  for ( var i = 0; i < str.length; i++ )
+  {
+    
+      arr.push(str[i]);
+      arr[i] = arr[i].slice(1,arr[i].length)+arr[i].slice(0,1);
+   if ( str[i].charCodeAt(str[i]) >= 65 && str[i].charCodeAt(str[i]) <= 90 || str[i].charCodeAt(str[i]) >= 97 && str[i].charCodeAt(str[i]) <= 122 )
+    {
+      arr[i]+="ay";  
+     }
+  }
+  arr = arr.join(" ");
+  return arr;
+}
