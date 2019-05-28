@@ -1,0 +1,13 @@
+function dataReverse(data) {
+var res = [], j = 0, end = "", finale=[]; 
+  for ( var i = 0; i < data.length; i+=8 )
+  {
+    res.push(data.slice(i,i+8));
+  }
+  res = res.reverse().join().split(",");
+  for ( var j = 0; j < res.length; j++ )
+  {
+    finale.push(parseInt(res[j]));
+  }
+  return finale;
+}
