@@ -1,0 +1,14 @@
+function alphabetPosition(text) {
+var alp = "abcdefghijklmnopqrstuvwxyz".split("");
+text = text.toLowerCase().split("");
+var arr = [];
+for( var i = 0; i < text.length; i++ )
+{
+  for( var j = 0; j < alp.length; j++ )
+  {
+    if ( alp[j] == text[i] )
+      arr.push(j+1);
+  }
+}
+  return arr.join(" ");
+}
