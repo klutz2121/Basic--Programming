@@ -1,0 +1,3 @@
+function toCamelCase(str){
+  return str.replace(/\-[a-z]|\_[a-z]/ig, ah_yuon => ah_yuon[1].toUpperCase());
+}
