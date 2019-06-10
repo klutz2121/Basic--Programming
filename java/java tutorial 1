@@ -1,0 +1,26 @@
+// Creating calculator using JAVA
+import java.util.Scanner;
+public class java_TT1 {
+    public static void main(String args[]){
+        double res=0;
+        Scanner inp = new Scanner(System.in);
+        System.out.println("Enter 2 numbers:");
+        double num1 = inp.nextDouble();
+        double num2 = inp.nextDouble();
+        System.out.println("Enter operator:");
+        //inp.nextLine();
+        String op = inp.next();
+
+        // We can assign those special char into a var so we can compare it with inp
+        // EG : char plus = "+"
+        if ( op.equals("+") )   // == can't be used here
+            res = num1 + num2;
+        else if ( op.equals("-") )
+            res = num1 - num2;
+        else if ( op.equals("*") || op.equals("x") )
+            res = num1 * num2;
+        else if ( op.equals("/"))
+            res = num1 / num2;
+        System.out.println(res);
+    }
+}
