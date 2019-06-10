@@ -1,0 +1,20 @@
+//Multi-class and passing arguments
+import java.util.*;
+
+public class java_TT3 {
+    public static void main (String args[])
+    {
+        Scanner inp = new Scanner(System.in);
+        sub_class obj = new sub_class();   //object creation
+        System.out.println("Please enter your name:");
+        String hela = inp.nextLine();
+        obj.message(hela);  // To use any method in the class and pass "name" args
+    }
+}
+class sub_class
+{
+    public void message(String name)    //"Received th"
+    {
+        System.out.println("Hola " + name +" Commo ce tas?");
+    }
+}
